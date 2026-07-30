@@ -38,28 +38,4 @@ No arquivo `package.json`, estão configurados os seguintes scripts:
 - `npm run knex`: Executa a CLI do Knex para migrações e seeds usando o interpretador do TypeScript.
 - `npm run lint`: Executa a verificação do ESLint em todos os arquivos `.ts` do projeto.
 
-## Como Executar o Projeto Localmente
 
-1. Clone o repositório:
-   git clone <URL_DO_SEU_REPOSITORIO>
-
-2. Acesse a pasta do projeto:
-   cd <NOME_DA_PASTA>
-
-3. Instale as dependências:
-   npm install
-
-4. Execute as migrations para criar as tabelas no SQLite:
-   npm run knex migrate:latest
-
-5. Inicie o servidor em modo de desenvolvimento:
-   npm run dev
-
-6. A aplicação rodará no endereço e porta definidos no seu arquivo `src/server.ts`.
-
-## Próximos Passos
-
-- [ ] Definir e criar a estrutura das tabelas finais do banco de dados via migrations.
-- [ ] Criar rotas para operações de CRUD (POST, GET, PUT, DELETE).
-- [ ] Aplicar validações nos dados recebidos pelas requisições.
-- [ ] Organizar a separação de responsabilidades no código (rotas, conexões e regras).
