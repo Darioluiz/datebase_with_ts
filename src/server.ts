@@ -1,3 +1,4 @@
+import coockie from '@fastify/cookie';
 import fastify from 'fastify';
 
 import { env} from '../env';
@@ -6,6 +7,7 @@ import { transitionsRoutes } from './routes/transtions.ts';
 
 const app = fastify()
 
+app.register(coockie)
 app.register(transitionsRoutes, {
   prefix: 'transactions'
 })
